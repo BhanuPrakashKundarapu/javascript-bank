@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="practice-1.js" defer></script>
+    <style>
+        body{
+            background-image: url("https://www.experian.com/blogs/global-insights/wp-content/uploads/2020/05/Juniper_SMA_Juniper_1200x562_GIB.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        header{
+            text-align: center;
+            background-color: grey;
+            padding: 20px;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 50px;
+            text-transform: capitalize;
+            font-weight: bolder;
+        }
+        .payment{
+            border:solid 1px black;
+            position: absolute;
+            left: 40%;
+            top:30%;
+            padding:30px;
+            background-color: rgb(14, 13, 13,0.4);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            box-shadow: 3px 4px 6px rgb(106, 103, 103,0.4);
+        }
+        .Cvv1{
+            display: flex;
+            justify-content: space-between;
+        }
+        .DATE1{
+            display: flex;
+            justify-content: space-between;
+        }
+        label{
+        background-color: rgb(116, 172, 220,0.5);
+        backdrop-filter: blur(8px);
+        padding: 10px;
+        padding-left: 150px;
+        padding-right: 80px;
+        position: absolute;
+        top:69%;
+        left:40.5%;
+        color: black;
+
+        }
+    </style>
+</head>
+<body>
+    <header>payment form</header>
+
+    <div class="payment">
+        <p1>CARD NO:</p1><input class="card" type="number">
+        <br><br>
+        <div class="Cvv1">
+        <p2>CVV:   </p2> <br> <input type="text" class="CVV"></div>
+        <br>
+        <div class="DATE1">
+        <p3>DATE:</p3><input type="date" class="DATE"></div>
+        <br>
+        <p4>AMOUNT:</p4><input type="number" class="AMOUNT">
+        <br><br>
+        <center>
+        <button class="btn">click me</button>
+    </center>
+    </div>
+    <label class="output"></label>
+</body>
+</html>

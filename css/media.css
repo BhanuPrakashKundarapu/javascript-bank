@@ -1,0 +1,221 @@
+@media (max-width:91rem){
+    html{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    body{
+      
+        overflow-x:hidden;
+    }
+    .navbar-menu{
+        height: 50vh;
+        top:10.6%;
+        right:0.4%;
+    }
+    .navbar-menu .menu ul{
+        line-height: 50px;
+        margin-left: 10px;
+        animation-name: slide;
+    }
+    @keyframes slide{
+        0%{
+                width: 0%;
+                height:60vh;
+        }
+
+        100%{
+            width:30%;
+        }
+       
+    }
+    .main-sec{
+        display: none;
+    }
+    .formal-sec{
+        background-color: antiquewhite;
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    .formal-sec .img{
+        /* background-color: brown; */
+        display: flex;
+        justify-content: center;
+    }
+    .img .creds{
+        position: absolute;
+
+        font-size:50px;
+        top: 64%;
+        color: rgb(252, 7, 7,0.3);
+        border: 2px solid rgb(252, 7, 7,0.3);;
+        z-index: 0;
+        font-weight: 900;
+    }
+    .img img{
+        margin-top: 10px;
+        position: sticky;
+        z-index: 1;
+    }
+    .container{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container .row{
+        /* background-color: brown; */
+        display:flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        
+        gap: 500px;
+    }
+    .container .row .col h2 ,p1{
+        font-size: 30px;
+    }
+    .container .row .col span{
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+@media(max-width:64rem){
+    html{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .container .row{
+        gap:100px;
+    }
+    .footer{
+        line-height: 5px;
+    }
+    .footer p1{
+        /* background-color: brown; */
+        font-size: 15px;
+    }
+    .footer span{
+        font-size: 15px;
+
+    }
+}
+@media(max-width:768px){
+    html{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .container .row{
+        gap:100px;
+        margin-left: 30px;
+    }
+}
+@media(max-width:426px){
+    body{
+        overflow-y: scroll;
+    }
+    header{
+        font-size: 40px;
+    }
+    .navbar .icon .fa-solid{
+        font-size: 30px;
+    }
+    .navbar-menu{
+        /* background-color: brown; */
+        height: 50vh;
+        top:10.6%;
+        right:1.1%;
+        width: 70%;
+
+    }
+    .navbar-menu .menu ul{
+        line-height: 50px;
+        margin-left: 10px;
+        animation-name: slide;
+    }
+    .navbar-menu .menu ul li a{
+        font-size: 15px;
+    }
+    @keyframes slide{
+        0%{
+                width: 0%;
+                height:50vh;
+        }
+
+        100%{
+            width:70%;
+        }
+       
+    }
+    .container .row{
+        /* background-color: brown; */
+        display: flex;
+        margin-left: 0px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #col{
+        margin-left:20px;
+        /* background-color: brown; */
+    }
+}
+@media(max-width:768px){
+    .navbar-menu{
+        /* background-color: brown; */
+        height: 50vh;
+        top:10.8%;
+        right:0.5%;
+        width: 70%;
+
+    }
+    .navbar-menu .menu ul{
+        line-height: 50px;
+        margin-left: 10px;
+        animation-name: slide;
+    }
+    .navbar-menu .menu ul li a{
+        font-size: 15px;
+    }
+    @keyframes slide{
+        0%{
+                width: 0%;
+                height:50vh;
+        }
+
+        100%{
+            width:70%;
+        }
+       
+    }
+}
+@media (max-width:376px){
+    .navbar-menu{
+        /* background-color: brown; */
+        height: 50vh;
+        top:10.8%;
+        right:1.8%;
+        width: 70%;
+
+    }
+    .formal-sec .col span{
+        font-size: 15px;
+    }
+    .formal-sec .col h2 {
+        /* background-color: brown; */
+        text-align: center;
+        font-size: 17px;
+    }
+    .formal-sec .col p1{
+        display: flex;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 25px;
+
+    }
+    .formal-sec  #col{
+        margin-left: 10px;
+
+    }
+}

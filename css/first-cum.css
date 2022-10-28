@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Rubik+Distressed&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+ body{
+    background-color: rgb(7, 7, 7);
+    font-family: 'Cairo', sans-serif;
+    overflow-x: hidden;
+} 
+.sec{
+    margin: 0px 5px 0px 5px;
+}
+/* nav div styling */
+.nav {
+    background-color: gray;
+    padding: 5px;
+    /* width: 100%; */
+
+}
+/* nav bar 1 child styling */
+.nav .navbar{
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+/* logo sec */
+.nav .navbar .logo img{
+    border: 2px solid black;
+    height: 40px;
+    width: 40px;
+}
+
+/* nav-buton styling  */
+.nav .navbar .nav-button{
+    padding-right: 25px;
+}
+
+
+/* header cover background style */
+.header{
+    /* position:; */
+    background-color: yellow;
+    height: 50vh;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-heading{
+    background-color: rgb(22, 21, 21,0.2    );
+    z-index: 1;
+    height: 50vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 600px; */
+    /* line-height: 0px; */
+}
+
+header{
+    /* background-color: aliceblue; */
+    font-size: 60px;
+    font-weight: 600;
+    height: 50px;
+    color:black;
+    /* display: flex; */
+}
+/* header i{
+  background-color: aliceblue;
+
+} */
+.cover-image{
+    display: flex;
+    justify-content:center;
+    z-index: 2;
+    background-color: rgb(9, 9, 9);
+    padding: 2px;
+    border-radius: 6px;
+    border: 2px solid black;
+}
+
+/* pass book second -sec */
+
+.bank{
+    display: grid;
+    gap:2px;
+}
+
+/* .navbar-menu */
+.navbar-menu{
+    position: absolute;
+    right:5px;
+    top:9.2%;
+    display: none;
+    /* display: none; */
+    background-color: rgba(252, 249, 249, 0.8);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    height:50vh;
+    max-width: 100%;
+    width: 30%;
+    animation-name: slide;
+    animation-duration: 0.5s; 
+}
+
+
+@keyframes slide{
+    0%{
+            width: 0%;
+            height:50vh;
+    }
+    
+    100%{
+        width:30%;
+    }
+}
+.navbar-menu::after{
+    animation-name: slidein;
+    animation-duration: 5s;
+}
+.navbar-menu .side-bar{
+    text-align: left;
+    line-height: 60px;
+}
+.navbar-menu .side-bar ul{
+    list-style: none;
+   
+}
+.navbar-menu .side-bar li a{
+    text-decoration:none; 
+    cursor: pointer;
+    color: black;
+    font-weight: bolder; 
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.navbar-menu .side-bar .menu ul li a:hover{
+    color: brown;
+}
+
+/* navbar stylings */
+.cross{
+    display: none;
+}
+.nav .navbar .nav-button .icon,.cross{
+    font-size: 25px;
+}
+.nav .navbar .nav-button .icon:hover ,.cross:hover{
+    font-size: 25px;
+
+    background-color: rgb(255, 255, 255,0.1);
+    border: 2px solid black;
+    padding:2px 5.5px;
+    border-radius: 5px;
+    color: white;
+}
+.footer{
+    /* background-color: black; */
+    margin-top: 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 10px;
+    gap: 5px;
+    padding: 5px;
+}
+.footer .primary{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   width: 100%;
+}
+.footer .primary a{
+    color:white;
+    text-decoration: none;
+}
+.footer .primary a:hover{
+    color: brown;
+
+}
+
+
+
+
+/* #Redion */ /*Main Sec*/
+
+
+/* <div class="main-sec">
+   
+<div class="column1">
+<div class="section"></div>
+</div>
+
+</div> */
+
+/* Parent div */ /*container*/
+
+/* main-sec */
+.main-sec{
+    background-color: aliceblue;
+    height: 70vh;
+}
+
+/* .main-sec h1 and used as refresh */
+.main-sec p1{
+    text-decoration: underline;
+    display: flex;
+    justify-content: left;
+    font-weight:bold;
+    font-size: 40px;
+}
+.main-sec p1:hover{
+    color: brown;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* passbook */
+.passbook{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* column1 */
+.passbook .column1 .section1{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.passbook .column1 .section1 img{
+    height: 320px;
+    width: 300px;
+    margin-top: 0px;
+}
+.personal{
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 40px;
+}
+.personal h2{
+    font-size: 35px;
+    text-decoration: underline;
+    font-weight:900;
+}
+.personal p{
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight:900;
+}
+
+
+/* column2 */
+.column2{
+    line-height:40px;
+}
+.account{
+    font-size: 20px;
+    font-weight: 900;
+}
+.account h2{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+.formal-sec{
+    display: none;
+}
+
+
